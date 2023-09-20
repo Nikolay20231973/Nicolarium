@@ -1,0 +1,28 @@
+<resources>
+<string name="app_name">Nicolarium</string>
+<string name="affirmation1">"Кто хочет делать — ищет способ, кто не хочет — ищет причину" (Сократ)</string>
+<string name="affirmation2">"Какая разница, кто сильнее, кто умнее, кто красивее, кто богаче? Ведь, в конечном итоге, имеет значение только то, счастливый ли ты человек или нет?" (Ошо).</string>
+<string name="affirmation3">Каждый день - это новая возможность расти и быть лучшей версией самого себя.</string>
+<string name="affirmation4">Каждое испытание в моей жизни - это возможность поучиться .</string>
+<string name="affirmation5">Мне есть за что благодарить.</string>
+<string name="affirmation6">В мою жизнь всегда приходят хорошие вещи.</string>
+<string name="affirmation7">Новые возможности ждут меня на каждом шагу.</string>
+<string name="affirmation8">"Я все равно ни о чем не жалею — хотя бы потому, что это бессмысленно" (Э. Сафарли).</string>
+<string name="affirmation9">События развернутся точно в нужное время.</string>
+<string name="affirmation10">Я буду присутствовать во всех моментах, которые принесет этот день.</string>
+
+<string name="instructions">Из этих букв составьте слово.</string>
+<string name="skip">Пропускать</string>
+<string name="submit">Предоставить</string>
+<string name="score">Счет: %d</string>
+<string name="word_count">%d/10</string>
+<string name="enter_your_word">Введите свое слово</string>
+<string name="congratulations">Поздравления!</string>
+<string name="you_scored">"Ты набрал: %d"</string>
+<string name="exit">Выход</string>
+<string name="play_again">Сыграй еще раз</string>
+<string name="wrong_guess">Неверное предположение!</string>
+<string name="manual">Вам 10 раз выпадет слово с перемешаннами буквами.\nВы должны собрать их.\nЗа каждое отгаданное слово\nполучаете 20 баллов.\nСамый большой выигрыш\n200 баллов.</string>
+<string name="manual2">Это очень полезная игра:\nтренирует концетрацию внимания.\nЧтобы легко угадывать\nвам нужно сконцетрироваться\nтолько на этих буквах\nи не думать ни о чём. </string>
+<string name="author">( Разработчик Николай 09.09 )</string>
+</resources>
