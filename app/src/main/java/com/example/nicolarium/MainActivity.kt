@@ -12,7 +12,7 @@ import com.example.nicolarium.navigation.NavGraph
 import com.example.nicolarium.ui.theme.NicolariumTheme
 
 /**  Gradle Module:
-1    implementation( "androidx.navigation:navigation-compose:2.7.2")
+1    implementation( "androidx.navigation:navigation-compose:2.4.2")
 2    implementation("androidx.compose.material3:material3:1.1.1")    добавить :1.1.1
 3    implementation("androidx.compose.material:material-icons-extended:1.4.3") необязательно расширенный набор значков
 4  composeOptions {
@@ -22,7 +22,7 @@ import com.example.nicolarium.ui.theme.NicolariumTheme
          plugins {
     id("com.android.application") version "8.1.0" apply false
     id("com.android.library")version "8.1.0" apply false
-    id("org.jetbrains.kotlin.android") version "1.8.20" apply false }
+    id("org.jetbrains.kotlin.android") version "1.8.10" apply false }
 */
 /*       Экраны:
 one    1 ЭКРАН   Образец разных кнопок.

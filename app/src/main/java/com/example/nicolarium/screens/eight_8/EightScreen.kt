@@ -21,6 +21,8 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.nicolarium.navigation.Screens
 
+//8 ЭКРАН
+
 @Composable
 fun EightScreen(navController: NavController) {
     Column(

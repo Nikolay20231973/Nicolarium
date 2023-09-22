@@ -24,6 +24,7 @@ import com.example.nicolarium.navigation.Screens
 import com.example.nicolarium.screens.seven_7.u.GameScreen
 
 // 7 ЭКРАН  ИГРА СЛОВА И В НИЗУ КНОПКА ПЕРЕХОДА НА ДРУГОЙ ЭКРАН
+//
 
 @Composable
 fun SevenScreen(navController: NavController) {
@@ -38,7 +39,7 @@ Column (modifier = Modifier
     .background(Color.White),
     verticalArrangement = Arrangement.Center,
     horizontalAlignment = Alignment.CenterHorizontally) {
-        GameScreen()
+        GameScreen(navController)
     }                         // выше код игра слов
 
     // ниже код: текст 7 экран кнопка переход на 8 экран

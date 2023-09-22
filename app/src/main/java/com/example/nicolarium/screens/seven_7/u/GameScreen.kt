@@ -16,6 +16,8 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonColors
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -40,11 +42,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.NavController
 import com.example.nicolarium.R
+import com.example.nicolarium.navigation.Screens
 
 
 @Composable
-fun GameScreen(gameViewModel: GameViewModel = viewModel()) {
+fun GameScreen(navController: NavController, gameViewModel: GameViewModel = viewModel()) {
     val gameUiState by gameViewModel.uiState.collectAsState()
     val mediumPadding = dimensionResource(R.dimen.padding_medium)
 
@@ -79,6 +83,32 @@ fun GameScreen(gameViewModel: GameViewModel = viewModel()) {
                     onPlayAgain = { gameViewModel.resetGame() }
                 )
             }
+
+            //ниже код кнопки на верху основного экрана
+            Button(
+                shape = MaterialTheme.shapes.medium,
+                colors = ButtonDefaults.run {
+                    val buttonColors: ButtonColors =
+                        buttonColors(Color.Blue)
+                    buttonColors },
+                modifier = Modifier.padding(1.dp),
+                onClick = {
+                    //TODO: Navigate to Details
+                    navController.navigate ( Screens.Two.route)  //вверху здесь добавили в @Composable fun GameScreen(navController: NavController,
+                })
+
+            {
+                Text(text = "подсказки",
+                    modifier = Modifier
+                        .padding(5.dp),
+                    style = MaterialTheme.typography.labelLarge.copy(
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White
+                    )
+                )
+            }
+
+            //выше код кнопки  на верху основного экрана
         }
         GameLayout(
             onUserGuessChanged = { gameViewModel.updateUserGuess(it) },
